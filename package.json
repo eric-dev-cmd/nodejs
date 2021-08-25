@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write \"src/**/*.{js, json, scss}\"",
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass -w src/resources/scss/ -o src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "src/**/*.{js, json, scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "author": "Trung Vinh",
   "license": "ISC",
