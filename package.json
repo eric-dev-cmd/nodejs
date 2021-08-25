@@ -15,15 +15,16 @@
   "author": "Trung Vinh",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "morgan": "^1.10.0",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12",
-    "prettier": "^2.3.2",
-    "husky": "^7.0.0"
+    "prettier": "^2.3.2"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.3"
+    "express-handlebars": "^5.3.3",
+    "mongoose": "^6.0.0"
   }
 }
