@@ -1,1 +1,21 @@
-<h3>Home</h3>
+{{!-- <ul class="people_list">
+  {{#each people}}
+  <li>{{this}}</li>
+  {{/each}}
+</ul> --}}
+<div class="mt-4">
+  <div class="row">
+    {{#each courses}}
+    <div class="col-sm-6 col-lg-4 mt-4">
+      <div class="card">
+        <img src={{this.image}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{this.title}}</h5>
+          <p class="card-text">{{this.des}}</p>
+          <a href="#" class="btn btn-danger">Buy Course</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
